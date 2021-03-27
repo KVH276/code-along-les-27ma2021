@@ -1,0 +1,107 @@
+@import url("./reset.css");
+@import url("../icons/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+:root {
+  --black: #000;
+  --white: #fff;
+  --green: #19ba99;
+  --grey: #cbd5d2;
+  --bodybg: #eef3f6;
+}
+body {
+  background-color: var(--bodybg);
+  margin-top: 27px;
+  font-size: 16px;
+}
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+form {
+  background-color: var(--green);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 19px;
+}
+form input {
+  /* display: block; */
+  width: calc(100% - 34px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  padding: 0px 57px 0px 23px;
+  height: 68px;
+  color: var(--white);
+  font-size: 16px;
+}
+form input::placeholder {
+  color: var(--white);
+  opacity: 0.8;
+}
+form button {
+  background-color: var(--white);
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--green);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5px;
+  margin-bottom: 13px;
+  padding: 13px;
+  box-shadow: 0px 0px 5px 0px var(--grey);
+}
+ul li span {
+  margin-right: auto;
+  padding: 10px;
+  line-height: 23px;
+}
+ul li button {
+  display: block;
+  width: 39px;
+  height: 39px;
+  background-color: transparent;
+  min-width: 39px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-items: center;
+  color: var(--green);
+  position: relative;
+}
+ul li button:last-child {
+  margin-left: 26px;
+}
+ul li button:last-child::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: calc(100% - 11px);
+  right: 52px;
+  top: 5.5px;
+  background-color: var(--grey);
+  pointer-events: none;
+}
